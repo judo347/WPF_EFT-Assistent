@@ -1,0 +1,274 @@
+﻿<Window x:Class="EFTApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EFTApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1200"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Window.Resources>
+          <x:Array x:Key="questRows" Type="{x:Type local:QuestRowVisual}"
+                   xmlns:local="clr-namespace:EFTApp.View">
+
+          </x:Array>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Topbar -->
+        <Grid Background="Aquamarine"
+              Grid.ColumnSpan="2"
+              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+          <TextBlock Text="BunnyCo"
+              Foreground="White"
+              Grid.Column="0"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center"
+          />
+
+            <Button Content="Exit" FontSize="14" FontWeight="Medium" Grid.Column="2" Grid.Row="0" Click="Button_Click_Exit">
+                <Button.Style>
+                    <Style TargetType="Button">
+                      <Setter Property="Background" Value="#FE6584"/>
+                      <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                              <Setter Property="Background" Value="Black"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="75" Height="15" CornerRadius="9" Background="{TemplateBinding Background}">
+                          <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+        <!-- Level sidebar -->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                  <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="53"/>
+                    <ColumnDefinition Width="24"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Image Source="pack://application:,,,/Data/Img/playerPortrait.png" Grid.Column="0" Grid.Row="0"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/prapor.png" Grid.Column="0" Grid.Row="1"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/therapist.png" Grid.Column="0" Grid.Row="2"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/skier.png" Grid.Column="0" Grid.Row="3"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/peacekeeper.png" Grid.Column="0" Grid.Row="4"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/mechanic.png" Grid.Column="0" Grid.Row="5"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/ragman.png" Grid.Column="0" Grid.Row="6"/>
+                <Image Source="pack://application:,,,/Data/Img/TraderPortraits/jaeger.png" Grid.Column="0" Grid.Row="7"/>
+
+                <Button Click="Button_Click_Player_Level_Up" Grid.Column="1" Grid.Row="0">+</Button>
+                <Button Click="Button_Click_Prapor_Level_Up" Grid.Column="1" Grid.Row="1">+</Button>
+                <Button Click="Button_Click_Therapist_Level_Up" Grid.Column="1" Grid.Row="2">+</Button>
+                <Button Click="Button_Click_Skier_Level_Up" Grid.Column="1" Grid.Row="3">+</Button>
+                <Button Click="Button_Click_Peacekeeper_Level_Up" Grid.Column="1" Grid.Row="4">+</Button>
+                <Button Click="Button_Click_Mechanic_Level_Up" Grid.Column="1" Grid.Row="5">+</Button>
+                <Button Click="Button_Click_Ragman_Level_Up" Grid.Column="1" Grid.Row="6">+</Button>
+                <Button Click="Button_Click_Jaeger_Level_Up" Grid.Column="1" Grid.Row="7">+</Button>
+
+                <TextBlock Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="playerLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Name="praporLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Name="therapistLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Name="skierLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Name="peacekeeperLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Name="mechanicLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Name="ragmanLevel">1</TextBlock>
+                <TextBlock Grid.Column="2" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Name="jaegerLevel">1</TextBlock>
+            </Grid>
+        </Grid>
+
+        <!-- Quest content-->
+        <Grid Background="Green" Grid.Column="1" Grid.Row="1">
+            <ListBox ItemsSource="{Binding questRows}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Background="Black">
+                            <TextBlock Text="{Binding Path=Temp}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+
+        <!-- Quest content-->
+        <!--
+        <Grid Background="Green" Grid.Column="1" Grid.Row="2">
+          <ListBox x:Name="XBox1">
+                <ListBoxItem>Item 1</ListBoxItem>
+          </ListBox>
+        </Grid>
+
+        <Grid Background="Green" Grid.Column="1" Grid.Row="3">
+            <Label Content="{Binding questCardExample}">
+                <Label.ContentTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                          <TextBlock Text="{Binding Name}"></TextBlock>
+                          <TextBlock Text="{Binding Giver}"></TextBlock>
+                            <ListBox ItemsSource="{Binding Objectives}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}"></TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </Label.ContentTemplate>
+            </Label>
+        </Grid>
+        -->
+
+        <!-- WORKS
+        <Grid Background="Green" Grid.Column="1" Grid.Row="4">
+            <ListBox ItemsSource="{Binding quests}">
+            <ListBox.ItemTemplate>
+              <DataTemplate>
+                <TextBlock Text="{Binding}"></TextBlock>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+        -->
+
+        <!--
+        <Grid Background="Green" Grid.Column="1" Grid.Row="4">
+          <ListBox ItemsSource="{Binding quests}">
+            <ListBox.ItemTemplate>
+              <DataTemplate>
+                <Label Content="{Binding}">
+                  <Label.ContentTemplate>
+                    <DataTemplate>
+                      <StackPanel>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Text="{Binding Giver}"></TextBlock>
+                        <ListBox ItemsSource="{Binding Objectives}">
+                          <ListBox.ItemTemplate>
+                            <DataTemplate>
+                              <TextBlock Text="{Binding}"></TextBlock>
+                            </DataTemplate>
+                          </ListBox.ItemTemplate>
+                        </ListBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </Label.ContentTemplate>
+                </Label>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+        -->
+
+        <!--
+        <Grid Background="Green" Grid.Column="1" Grid.Row="4">
+            <ListBox ItemsSource="{Binding QuestRows}">
+            <ListBox.ItemTemplate>
+              <DataTemplate>
+                <Label Content="{Binding}">
+                  <Label.ContentTemplate>
+                    <DataTemplate>
+                      <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding MapName}"></TextBlock>
+                        <ListBox ItemsSource="{Binding Quests}">
+                          <ListBox.ItemTemplate>
+                            <DataTemplate>
+                              <Label Content="{Binding}">
+                                <Label.ContentTemplate>
+                                  <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Name}"></TextBlock>
+                                            <TextBlock Text="{Binding Giver}"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                  </Label.ContentTemplate>
+                                </Label>
+                            </DataTemplate>
+                          </ListBox.ItemTemplate>
+                        </ListBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </Label.ContentTemplate>
+                </Label>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+        -->
+
+        <Grid Background="Green" Grid.Column="1" Grid.Row="4">
+          <ListBox ItemsSource="{Binding QuestRows}">
+            <ListBox.ItemTemplate>
+              <DataTemplate>
+                <Label Content="{Binding}">
+                  <Label.ContentTemplate>
+                    <DataTemplate>
+                      <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Map}"></TextBlock>
+                        <ListBox ItemsSource="{Binding Quests}">
+                          <ListBox.ItemTemplate>
+                            <DataTemplate>
+                              <Label Content="{Binding}">
+                                <Label.ContentTemplate>
+                                  <DataTemplate>
+                                    <StackPanel Background="{Binding stateColor}">
+                                      <TextBlock Text="{Binding quest.name}"></TextBlock>
+                                      <TextBlock Text="{Binding quest.trader}"></TextBlock>
+                                      <TextBlock Text="{Binding quest.state}"></TextBlock>
+                                    </StackPanel>
+                                  </DataTemplate>
+                                </Label.ContentTemplate>
+                              </Label>
+                            </DataTemplate>
+                          </ListBox.ItemTemplate>
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
+                      </StackPanel>
+                    </DataTemplate>
+                  </Label.ContentTemplate>
+                </Label>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+
+    </Grid>
+</Window>

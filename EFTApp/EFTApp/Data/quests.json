@@ -1,0 +1,2750 @@
+{
+  "quests": [
+    {
+      "name": "Debut",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 0,
+      "req_quests": [ ],
+      "maps": ["Customs"],
+      "objectives": [{
+        "obj": "5x Kill Scav"
+      }, {
+        "obj": "2x Hand-in \"MP-133\""
+      }],
+      "requirements": []
+    },
+    {
+      "name": "Checking",
+      "giver": "Prapor",
+      "req_level": 2,
+      "id": 1,
+      "req_quests": [ 0 ],
+      "maps": ["Customs"],
+      "objectives": [{
+        "obj": "Find \"bronze pocket watch\""
+      }, {
+        "obj": "Hand over quest item"
+      }],
+      "requirements": ["Machinery Key"]
+    },
+    {
+      "name": "Shootout Picnic",
+      "giver": "Prapor",
+      "req_level": 3,
+      "id": 2,
+      "req_quests": [ 1 ],
+      "maps": ["Woods"],
+      "objectives": [{
+        "obj": "15x Kill scav"
+      }],
+      "requirements": []
+    },
+    {
+      "name": "Delivery from the past",
+      "giver": "Prapor",
+      "req_level": 5,
+      "id": 3,
+      "req_quests": [ 1 ],
+      "maps": ["Customs", "Factory"],
+      "objectives": [{
+        "obj": "Customs: Find \"secure case\" in RED office"
+      }, {
+        "obj": "Factory: place \"secure case\" in metal hut near Gate 3"
+      }, {
+        "obj": "Factory: extract"
+      }],
+      "requirements": [ "Customs office key" ]
+    },
+    {
+      "name": "BP depot",
+      "giver": "Prapor",
+      "req_level": 5,
+      "id": 4,
+      "req_quests": [ 3 ],
+      "maps": ["Customs"],
+      "objectives": [{
+        "obj": "4x Mark orange fuel tank trucks",
+        "subs": ["New Gas", "Old Gas", "Construction", "Road left side of map"]
+      }],
+      "requirements": ["4x MS2000 Marker"]
+    },
+
+
+    {
+      "name": "Bad rep evidence",
+      "giver": "Prapor",
+      "req_level": 6,
+      "id": 5,
+      "req_quests": [ 4 ],
+      "maps": ["Customs"],
+      "objectives": [{
+        "obj": "Find \"secure case\" in white con second floor, east construction"
+    }, {
+        "obj": "Extract and hand in case"
+      }],
+      "requirements": ["Key: Portable cabin key of customs Factory zone"]
+    },
+    {
+      "name": "Ice cream cones",
+      "giver": "Prapor",
+      "req_level": 9,
+      "id": 6,
+      "req_quests": [ 5 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "6x Hand-in \"60 round mags for AK\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Postman Pat - Part 1",
+      "giver": "Prapor",
+      "req_level": 10,
+      "id": 7,
+      "req_quests": [ 6 ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "Find \"lettter\" on body, south-east, concrete hut"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Shaking up teller",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 8,
+      "req_quests": [ 7 ],
+      "req_LL" : 2,
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Find \"Bank case\", 3-story dorms, second floor, 203, under bed"
+        }],
+      "requirements": [ "Key: Dorm room 203" ]
+    },
+    {
+      "name": "The Punisher - Part 1",
+      "giver": "Prapor",
+      "req_level": 17,
+      "id": 9,
+      "req_quests": [ 8 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "15x Kill Scav using AKM-series"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Punisher - Part 2",
+      "giver": "Prapor",
+      "req_level": 18,
+      "id": 10,
+      "req_quests": [ 9 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "12x Kill Scav using suppressed wep"
+        }, {
+        "obj": "7x Hand-in \"Lower half-masks\" (FiR)"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Punisher - Part 3",
+      "giver": "Prapor",
+      "req_level": 19,
+      "id": 11,
+      "req_quests": [ 10 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "25x Kill Scav using AKS-74U"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Punisher - Part 4",
+      "giver": "Prapor",
+      "req_level": 20,
+      "id": 12,
+      "req_quests": [ 11 ],
+      "maps": [ "Woods", "Shoreline" ],
+      "objectives": [{
+        "obj": "Woods: 10x Kill Scav using 12ga shotgun"
+        }, {
+        "obj": "Shoreline: 10x Kill PMC while wearing \"balaclava\" and \"scav vest\""
+        }, {
+        "obj": "5x Hand-in \"Bars A-2607\" (FiR)"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Punisher - Part 5",
+      "giver": "Prapor",
+      "req_level": 20,
+      "id": 13,
+      "req_quests": [ 12 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "3x Hand-in AK-74N"
+        }, {
+        "obj": "3x Hand-in M4A1"
+        }, {
+        "obj": "5x Hand-in PM pistols"
+        }, {
+        "obj": "10x Kill PMC while wearing \"PACA\" and \"6b47\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Punisher - Part 6",
+      "giver": "Prapor",
+      "req_level": 21,
+      "id": 14,
+      "req_quests": [ 13 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "15x Kill PMC using SVD"
+        }, {
+        "obj": "10x Hand-in USEC dogtags"
+        }, {
+        "obj": "10x Hand-in BEAR dogtags"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Polikhim hobo",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 15,
+      "req_quests": [ ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "25x Kill Scav"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Big customer",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 16,
+      "req_quests": [ ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Mark white van, east, big white warehouse, inside"
+      }, {
+        "obj": "Extract"
+        }],
+      "requirements": [ "1x MS2000 Marker" ]
+    },
+    {
+      "name": "No offence",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 17,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "10x Hand-in \"M67 grenades\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Grenadier",
+      "giver": "Prapor",
+      "req_level": 30,
+      "id": 18,
+      "req_quests": [ 8 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "12x Kill PMC with granade"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Perfect mediator",
+      "giver": "Prapor",
+      "req_level": 35,
+      "id": 19,
+      "req_quests": [ 8 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Reach LL4 with Ragman"
+        }, {
+        "obj": "Reach LL4 with Skier"
+        }, {
+        "obj": "Reach LL4 with Mechanic"
+        }, {
+        "obj": "Reach LL4 with Peacekeeper"
+        }, {
+        "obj": "Reach LL4 with Prapor"
+        }, {
+        "obj": "Reach LL4 with Therapist"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Insomnia",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 20,
+      "req_quests": [ 18 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "30x Kill PMC during nighttime (23-04)"
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Test drive - Part 1",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 21,
+      "req_quests": [ 18 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "20x Kill PMC using M1A with \"Hybrid 46 silencer\" and \"Trijicon REAP-IR thermal scope\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Regulated materials",
+      "giver": "Prapor",
+      "req_level": 25,
+      "id": 22,
+      "req_quests": [ 15 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+        "subs": [ "1x \"military battery\"",
+				  "10x \"30-mil. shells for BMP cannon\"" ]
+      }],
+      "requirements": [ ]
+    },
+
+
+
+
+    {
+      "name": "Shortage",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 23,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "5x Hand-in \"Salewa Kits\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Sanitary Standards - Part 1",
+      "giver": "Therapist",
+      "req_level": 4,
+      "id": 24,
+      "req_quests": [ 23 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"gas analyzer\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Sanitary Standards - Part 2",
+      "giver": "Therapist",
+      "req_level": 8,
+      "id": 25,
+      "req_quests": [ 24 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "2x Hand-in \"gas analyzer\""
+        }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Operation Aquarius - Part 1",
+      "giver": "Therapist",
+      "req_level": 6,
+      "id": 26,
+      "req_quests": [ 23 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "2-story dorm, 206, go into room"
+        }],
+      "requirements": [ "Key: Dorm room 206" ]
+    },
+    {
+      "name": "Operation Aquarius - Part 2",
+      "giver": "Therapist",
+      "req_level": 6,
+      "id": 27,
+      "req_quests": [ 26 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "15x Kill Scav"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Painkiller",
+      "giver": "Therapist",
+      "req_level": 8,
+      "id": 28,
+      "req_quests": [ 25 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "4x Hand-in \"Morphine\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Pharmacist",
+      "giver": "Therapist",
+      "req_level": 10,
+      "id": 29,
+      "req_quests": [ 28 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "2-story dorms, first floor, 114, ontop of safe, \"Carbon case\""
+      }],
+      "requirements": [ "Key: Dorm room 114" ]
+    },
+    {
+      "name": "Supply plans",
+      "giver": "Therapist",
+      "req_level": 13,
+      "id": 30,
+      "req_quests": [ 29 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "Saw mill, south end, south cabin, under bed, \"Secure case\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "General wares",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 31,
+      "req_quests": [ 29 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "15x Hand-in \"cans of meat (Tushonka)\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Car repair",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 32,
+      "req_quests": [ 29 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+        "subs": [ "4x \"car batteries\"",
+          "8x \"spark plug\"" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Health Care Privacy - Part 1",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 33,
+      "req_quests": [ 29 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Mark ambulance",
+        "subs": ["North-east, near tunnel", "North-east, near tunnel", "main entrance, resort area" ]
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "3x \"MS2000 marker\"" ]
+    },
+    {
+      "name": "Health Care Privacy - Part 2",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 34,
+      "req_quests": [ 33 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, west wing, 306, windowsill by chair, case"
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "Key: West wing room 306" ]
+    },
+    {
+      "name": "Health Care Privacy - Part 3",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 35,
+      "req_quests": [ 34 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "West beach, edge of water, minivan, \"Blood sample\""
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Health Care Privacy - Part 4",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 36,
+      "req_quests": [ 35 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Health skill level 4"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Health Care Privacy - Part 5",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 37,
+      "req_quests": [ 36 ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "Nighttime, office area, top floor, middle, breach room, 3x place \"Gunpowder \"Kite\"\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Postman Pat - Part 2",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 38,
+      "req_quests": [ ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "Find \"lettter\" on body, south-east, concrete hut"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Out of curiosity",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 39,
+      "req_quests": [ ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Mark white van, east, big white warehouse, inside"
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "1x MS2000 Marker" ]
+    },
+    {
+      "name": "Trust regain",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 40,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in keys",
+        "subs": ["\"Dorm room 303\"", "\"ZB-014\"", "\"Military base checkpoint key\"", "\"The key to the gas station storage room\"" ]
+      }],
+      "requirements": [ "1x MS2000 Marker" ]
+    },
+    {
+      "name": "Hippocratic Vow",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 41,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"500 dollars\""
+      }],
+      "requirements": [ "Complete quest: Stirrup", "Complete quest: Car repair", "Have less than 0.6 rep with Therapist" ]
+    },
+    {
+      "name": "Private clinic",
+      "giver": "Therapist",
+      "req_level": 30,
+      "id": 42,
+      "req_quests": [ 36 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "3x Hand-in \"Ophthalmoscopes\""
+      }, {
+        "obj": "3x Hand-in \"LEDX Skin Transilluminators\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Athlete",
+      "giver": "Therapist",
+      "req_level": 30,
+      "id": 43,
+      "req_quests": [ 36 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Level 10 \"Health skill\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Decontamination service",
+      "giver": "Therapist",
+      "req_level": 30,
+      "id": 44,
+      "req_quests": [ 37, 42 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "30x Kill scav at less range than 60m"
+      }],
+      "requirements": [ "Must be wearing: \"Respirator\"", "Must be wearing: \"Module-3M bodyarmour\"" ]
+    },
+    {
+      "name": "An apple a day - keeps the doctor away",
+      "giver": "Therapist",
+      "req_level": 30,
+      "id": 45,
+      "req_quests": [ 35 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"400.000 roubles\""
+      }],
+      "requirements": [ ]
+    },
+
+
+
+
+
+
+    {
+      "name": "Supplier",
+      "giver": "Skier",
+      "req_level": 5,
+      "id": 46,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "4x Hand-in \"Module-3M bodyarmor\""
+      }, {
+        "obj": "4x Hand-in \"TOZ-106 bolt-action shotgun\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Extortionist",
+      "giver": "Skier",
+      "req_level": 7,
+      "id": 47,
+      "req_quests": [ 46 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Between old and new gas, small white hut, under jacket on floor, \"Docs 0048\""
+      }],
+      "requirements": [ "Key: \"Unknown key\"" ]
+    },
+    {
+      "name": "Stirrup",
+      "giver": "Skier",
+      "req_level": 8,
+      "id": 48,
+      "req_quests": [ 47 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "3x Kill PMC using pistol"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "What's on the flash drive?",
+      "giver": "Skier",
+      "req_level": 8,
+      "id": 49,
+      "req_quests": [ 47 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "2x Hand-in \"USB flash drives\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Golden swag",
+      "giver": "Skier",
+      "req_level": 8,
+      "id": 50,
+      "req_quests": [ 49 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "3-story dorms, 303, on table, take Zibbo lighter"
+      }, {
+        "obj": "South of RED, parking, white hut, place Zibbo lighter"
+      }],
+      "requirements": [ "Key: \"Trailer park cabin key\" (Initial equipment)", "Key: \"Dorm room 303 key\""]
+    },
+    {
+      "name": "Chemical - Part 1",
+      "giver": "Skier",
+      "req_level": 10,
+      "id": 51,
+      "req_quests": [ 50 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "South-east, between bunkers, train cart, south-west corner, take case"
+      }, {
+        "obj": "hand-in \"Dorm room 220 Key\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Chemical - Part 2",
+      "giver": "Skier",
+      "req_level": 10,
+      "id": 52,
+      "req_quests": [ 51 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "3-story dorms, 220, table, side of laptop, take usb"
+      }, {
+        "obj": "3-story dorms, 220, shelves near door, top shelve between binders, take letter"
+      }],
+      "requirements": [ "Key: \"Dorm room 220 Key\" (Initial equipment)" ]
+    },
+    {
+      "name": "Chemical - Part 3",
+      "giver": "Skier",
+      "req_level": 11,
+      "id": 53,
+      "req_quests": [ 52 ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "office area, top floor, middle, breach room, filing cabinet, take syringe"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Chemical - Part 4",
+      "giver": "Skier",
+      "req_level": 11,
+      "id": 54,
+      "req_quests": [ 53 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Mark white van, east, big white warehouse, inside"
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "1x MS2000 Marker" ]
+    },
+    {
+      "name": "Loyalty buyout",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 55,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"1 mil rubles\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Friend from the West - Part 1",
+      "giver": "Skier",
+      "req_level": 9,
+      "id": 56,
+      "req_quests": [ 50 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "7x Kill USEC"
+      }, {
+        "obj": "2x Hand-in \"USEC DogTags\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Friend from the West - Part 2",
+      "giver": "Skier",
+      "req_level": 9,
+      "id": 57,
+      "req_quests": [ 56 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"6000 dollars\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "\"Vitamins\" - Part 1",
+      "giver": "Skier",
+      "req_level": 22,
+      "id": 58,
+      "req_quests": [ 53 ],
+      "maps": [ "Shoreline", "Interchange" ],
+      "objectives": [{
+        "obj": "Shoreline: resort, west wing, 112, fridge, take \"Chemical container\""
+      }, {
+        "obj": "Interchange: main-floor, Emercom, middle, table, round box, take \"Chemical container\""
+      }, {
+        "obj": "Interchange: main-floor, Mantis, back right, table, round tin, take \"Chemical container\""
+      }],
+      "requirements": [ "Key: \"Office 112 West wing\"", "Key: \"EMERCOM medical unit\"" ]
+    },
+    {
+      "name": "\"Vitamins\" - Part 2",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 59,
+      "req_quests": [ 58 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "4x Hand-in \"Respirator\" (FiR)"
+      }, {
+        "obj": "3x Hand-in \"Medical bloodset\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Lend lease - Part 1",
+      "giver": "Skier",
+      "req_level": 25,
+      "id": 60,
+      "req_quests": [ 57 ],
+      "maps": [ "Shoreline", "Woods" ],
+      "objectives": [{
+        "obj": "Woods: south-east, white hut at road, SUV, front seat, take \"Motor controller\""
+      }, {
+        "obj": "Woods: saw mill, south-east, pickup truck, black box, take \"Gyroscope\""
+      }, {
+        "obj": "Shoreline: west, at side road near Drone, in destroyed wooden box, take \"Controller\""
+      }, {
+        "obj": "Shoreline: resort, east wing, 306, balcony, cardboard box, take \"Controller\""
+      }, {
+        "obj": "Shoreline: resort, west wing, 216, metal closet near entry door, take \"Controller\""
+      }],
+      "requirements": [ "Key: \"West wing room 216\"", "Key: \"East wing room 306\" or \"East wing room 308\"" ]
+    },
+    {
+      "name": "Informed means armed",
+      "giver": "Skier",
+      "req_level": 24,
+      "id": 61,
+      "req_quests": [ 57 ],
+      "maps": [ "Interchange", "Woods", "Customs" ],
+      "objectives": [{
+        "obj": "3x Install \"WIFI camera\"",
+		"subs": [ "Interchange: main floor, Brutal store, place on wood platform looking at Kiba", 
+				"Woods: saw mill, north, wood pile near water, place", 
+				"Customs: Road to port, bush near blue containers, place" ]
+      }],
+      "requirements": [ "Key: \"West wing room 216\"", "Key: \"East wing room 306\" or \"East wing room 308\"" ]
+    },
+    {
+      "name": "Chumming",
+      "giver": "Skier",
+      "req_level": 27,
+      "id": 62,
+      "req_quests": [ 61 ],
+      "maps": [ "Interchange", "Woods", "Customs" ],
+      "objectives": [{
+        "obj": "stash \"gold chains\"",
+		"subs": [ "3x Interchange: main floor, Generic store, place on metal bed", 
+				"3x Woods: saw mill, south, middle cabin, on bed, on book, place", 
+				"3x Customs: 3-story stors, 3rd floor, kitchen, place in microwave" ]
+      }],
+      "requirements": [ "Key: \"West wing room 216\"", "Key: \"East wing room 306\" or \"East wing room 308\"" ]
+    },
+    {
+      "name": "Kind of sabotage",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 63,
+      "req_quests": [ 29 ],
+      "maps": [ "Woods"],
+      "objectives": [{
+        "obj": "Saw mill, south end, south cabin, under bed, \"Secure case\""
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Silent caliber",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 64,
+      "req_quests": [ 62 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Kill with suppressed 12ga shutgun",
+		"subs": [ "20x Scav", "10x PMC" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Flint",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 65,
+      "req_quests": [ 62 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Level 8 in Stress Resistance skill"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Bullshit",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 66,
+      "req_quests": [ 62 ],
+      "maps": [ "Customs"],
+      "QuestObjectives": [{
+		"obj": "During the entire raid, you are not allowed to shoot scavs or bosses"
+		}, {
+        "obj": "3-story dorms, top floor, pile of trash opposie of stairs, place items",
+		"subs": [ "1x \"False flash drive\"", "1x \"Roler submariner gold wrist watch\"", "1x \"SV-98\"" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Setup",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 67,
+      "req_quests": [ 66 ],
+      "maps": [ "Customs"],
+      "objectives": [{
+        "obj": "15x Kill PMC while wearing/using following items",
+		"subs": [ "\"Ushanka ear-flap cap\"", "\"Scav Vest\"", "\"MP-133\" or \"MP-153\"" ]
+      }],
+      "requirements": [ ]
+    },
+	
+	
+	
+	
+	
+	
+    {
+      "name": "Setup",
+      "giver": "Peacekeeper",
+      "req_level": 10,
+      "id": 68,
+      "req_quests": [ 57 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "Gas station, beach, broken wood boat at edge of water, place following items",
+		"subs": [ "\"Leatherman Multitool\"", "\"SV-98 bolt-action sniper rifle\"" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Tigr Safari",
+      "giver": "Peacekeeper",
+      "req_level": 10,
+      "id": 69,
+      "req_quests": [ 68 ],
+      "maps": [ "Customs"],
+      "objectives": [{
+        "obj": "3x Mark following Armored vehicle vehicle:",
+		"subs": [ "Military checkpoint, on road", "Military checkpoint, west, on road", "North-west outside of contruction, on road near bridge" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "3x MS2000 Marker" ]
+    },
+	{
+      "name": "Scrap Metal",
+      "giver": "Peacekeeper",
+      "req_level": 10,
+      "id": 70,
+      "req_quests": [ 69 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "3x Mark following T-90 tanks:",
+		"subs": [ "North, Rock passage, bunker", "West, middle of village, on road", "Between Power and Radar Tower" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "3x MS2000 Marker" ]
+    },
+	{
+      "name": "Eagle Eye",
+      "giver": "Peacekeeper",
+      "req_level": 11,
+      "id": 71,
+      "req_quests": [ 70 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "2x Find \"SAS disk\":",
+		"subs": [ "North, Rock passage, Drone crash", "East, between Radar Tower and Scout Tower, Drone crash" ]
+      }],
+      "requirements": [  ]
+    },
+	{
+      "name": "Humanitarian Supplies",
+      "giver": "Peacekeeper",
+      "req_level": 11,
+      "id": 72,
+      "req_quests": [ 71 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+		"obj": "5x Hand-in \"MRE ration pack\""
+		}, {
+		"obj": "10x Kill scav wearing \"MF-UNTAR armor vest\" and \"UNTAR helmet\""
+		}, {
+        "obj": "2x Mark following UN cargo trucks:",
+		"subs": [ "North-west, inside blue fence area", "Resort, north entrance" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "2x MS2000 Marker" ]
+    },
+	{
+      "name": "The Cult - Part 1",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 73,
+      "req_quests": [ 72 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "North-west, Swamp area, church, follow blood trail to other house, body inside"
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The Cult - Part 2",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 74,
+      "req_quests": [ 73 ],
+      "maps": [ "Shoreline", "Customs", "Woods"],
+      "objectives": [{
+        "obj": "3x Mark the following ritual spots:",
+		"subs": [ "Customs: 3-story dorms, marked room", 
+			"Woods: east of saw mill, marked circle in forest", 
+			"Shoreline: resort, east wing, 321 (pig room)" ]
+      }],
+      "requirements": [ "3x MS2000 Marker", "Key: Marked key" ]
+    },
+    {
+      "name": "Spa Tour - Part 1",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 75,
+      "req_quests": [ 72 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "7x Kill Scav using 12ga shotgun (HEADSHOTS only)"
+        }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Spa Tour - Part 2",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 76,
+      "req_quests": [ 75 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "Mark following spots:",
+		"subs": [ "Resort, south, front entrance, helicopter area", 
+				"Resort, south, front entrance, east of helicopter area, dirt road" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "2x MS2000 Marker" ]
+    },
+	{
+      "name": "Spa Tour - Part 3",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 77,
+      "req_quests": [ 76 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "\"WD-40 100ml\"", 
+				"2x \"Clin wipers\"", 
+				"2x \"Corrugated hoses\"", 
+				"2x \"Ox bleach\"" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "2x MS2000 Marker" ]
+    },
+	{
+      "name": "Spa Tour - Part 4",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 78,
+      "req_quests": [ 77 ],
+      "maps": [ "Shoreline"],
+      "objectives": [{
+        "obj": "Find the two generators:",
+		"subs": [ "Resort, west wing 219", 
+				"Resort, east wing 220"]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "\"West wing room 219 key\" or \"West wing room 220 key\"" ]
+    },
+	{
+      "name": "Spa Tour - Part 5",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 79,
+      "req_quests": [ 78 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Hand-in: north, near Rock Passage exit, in bunker, on chair."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Spa Tour - Part 6",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 80,
+      "req_quests": [ 79 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"8000 dollars\""
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Spa Tour - Part 7",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 81,
+      "req_quests": [ 80 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "4x \"Morphine injector\"", 
+				"2x \"Heat-exchange alkali surface washer\"", 
+				"2x \"Corrugated hoses\"", 
+				"2x \"propane tank\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Cargo X - Part 1",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 82,
+      "req_quests": [ 81 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, east wing, 306, on chair, take laptop"
+      }],
+      "requirements": [ "\"East wing room 306 key\" or \"East wing room 308 key\"" ]
+    },
+	{
+      "name": "Cargo X - Part 2",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 83,
+      "req_quests": [ 82 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, east wing, room 108, on top of blue barrel"
+		}],
+      "requirements": [ ]
+    },
+    {
+      "name": "Cargo X - Part 3",
+      "giver": "Peacekeeper",
+      "req_level": 12,
+      "id": 189,
+      "req_quests": [ 83 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, west wing, basement, hole at end of pool"
+      }, {
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Lend lease - Part 2",
+      "giver": "Peacekeeper",
+      "req_level": 30,
+      "id": 188,
+      "req_quests": [ 60 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:",
+		"subs": [ "2x \"Military COFDM wireless Signal Transmitters\"", 
+				"3x \"Virtex programmable processors\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Wet Job - Part 1",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 84,
+      "req_quests": [ 83 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "10x Kill Scav using suppressed M4 or ADAR"
+		}, {
+        "obj": "The following suppressers does not count:",
+		"subs": [ "\"Thunder Beast Ultra 5\"", 
+				"\"Daniel Defense Wave QD\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Wet Job - Part 2",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 85,
+      "req_quests": [ 84 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "10x Kill Scav using suppressed M4 or ADAR"
+		}, {
+        "obj": "South-east, island, house"
+      }],
+      "requirements": [ "MS2000 Marker" ]
+    },
+	{
+      "name": "Wet Job - Part 3",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 86,
+      "req_quests": [ 85 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "South-west, road near water, east of island, yellow car east of bus"
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Wet Job - Part 4",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 87,
+      "req_quests": [ 86 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, admin part (theatre wing), east-side, wanted office, middle room, corner of table, take flash drive"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Wet Job - Part 5",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 88,
+      "req_quests": [ 87 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, east wing, room 328, ontop of PC"
+      }],
+      "requirements": [ "\"East wing room 328 key\" or \"Health resort utility room key\"" ]
+    },
+	{
+      "name": "Wet Job - Part 6",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 89,
+      "req_quests": [ 88 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Reach level 7 in Sniper rifle handling skill"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The guide",
+      "giver": "Peacekeeper",
+      "req_level": 0,
+      "id": 90,
+      "req_quests": [ 89 ],
+      "maps": [ "Interchange", "Shoreline", "Factory", "Labs", "Woods", "Customs", "Reserve" ],
+      "objectives": [{
+        "obj": "Interchange: Extract"
+		}, {
+        "obj": "Shoreline: Extract"
+		}, {
+        "obj": "Factory: Extract"
+		}, {
+        "obj": "Labs: Extract"
+		}, {
+        "obj": "Woods: Extract"
+		}, {
+        "obj": "Customs: Extract"
+		}, {
+        "obj": "Reserve: Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Peacekeeping mission",
+      "giver": "Peacekeeper",
+      "req_level": 14,
+      "id": 91,
+      "req_quests": [ 188 ],
+      "maps": [ "Woods", "Interchange", "Shoreline", "Customs" ],
+      "objectives": [{
+        "obj": "Get kills while wearing \"UNTAR helmet\", \"MF-UNTAR armor\", \"M4A1\"",
+		"subs": [ "Woods: x12 kill Scav", 
+				"Interchange: x12 kill Scav", 
+				"Shoreline: x12 kill Scav", 
+				"Customs: x12 kill Scav" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Mentor",
+      "giver": "Peacekeeper",
+      "req_level": 0,
+      "id": 92,
+      "req_quests": [ 87 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"50.000 euro\""
+      }],
+      "requirements": [ ]
+    },
+	
+	
+	
+	
+	
+	
+	{
+      "name": "Gunsmith - Part 1",
+      "giver": "Mechanic",
+      "req_level": 10,
+      "id": 93,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"MP-133\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 2",
+      "giver": "Mechanic",
+      "req_level": 11,
+      "id": 94,
+      "req_quests": [ 93 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AKS-74U\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 3",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 95,
+      "req_quests": [ 94 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"MP5\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 4",
+      "giver": "Mechanic",
+      "req_level": 15,
+      "id": 96,
+      "req_quests": [ 95 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"M4A1\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 5",
+      "giver": "Mechanic",
+      "req_level": 17,
+      "id": 97,
+      "req_quests": [ 96 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"DVL-10\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 6",
+      "giver": "Mechanic",
+      "req_level": 18,
+      "id": 98,
+      "req_quests": [ 97 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"R11 RSASS\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 7",
+      "giver": "Mechanic",
+      "req_level": 19,
+      "id": 99,
+      "req_quests": [ 98 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"Remington Model 870\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 8",
+      "giver": "Mechanic",
+      "req_level": 19,
+      "id": 100,
+      "req_quests": [ 99 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AKM\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 9",
+      "giver": "Mechanic",
+      "req_level": 20,
+      "id": 101,
+      "req_quests": [ 100 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AKS-74N\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 10",
+      "giver": "Mechanic",
+      "req_level": 20,
+      "id": 102,
+      "req_quests": [ 101 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AK-105\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 11",
+      "giver": "Mechanic",
+      "req_level": 20,
+      "id": 103,
+      "req_quests": [ 102 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AS VAL\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 12",
+      "giver": "Mechanic",
+      "req_level": 23,
+      "id": 104,
+      "req_quests": [ 103 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AK-102\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 13",
+      "giver": "Mechanic",
+      "req_level": 25,
+      "id": 105,
+      "req_quests": [ 104 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"SIG MPX\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 14",
+      "giver": "Mechanic",
+      "req_level": 27,
+      "id": 106,
+      "req_quests": [ 105 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"AKMN\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 15",
+      "giver": "Mechanic",
+      "req_level": 29,
+      "id": 107,
+      "req_quests": [ 106 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"M1A\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gunsmith - Part 16",
+      "giver": "Mechanic",
+      "req_level": 35,
+      "id": 108,
+      "req_quests": [ 107 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in \"M4A1\", that comply with specifications"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Farming - Part 1",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 109,
+      "req_quests": [ 93 ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "Fix control boards:",
+		"subs": [ "Glass hall, middle, red light", 
+				"North-east, Room behind glass wall, corner, red light" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "2x \"A set of tools\"" ]
+    },
+	{
+      "name": "Farming - Part 2",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 110,
+      "req_quests": [ 109 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in: (FiR)",
+		"subs": [ "2x \"Powercord\"", 
+				"4x \"T-Shaped Plug\"",
+				"2x \"Printed circuit board\"" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "2x \"A set of tools\"" ]
+    },
+	{
+      "name": "Farming - Part 3",
+      "giver": "Mechanic",
+      "req_level": 14,
+      "id": 111,
+      "req_quests": [ 110 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "West, big RED, office, end of hall room, cardboard box under shelves"
+      }],
+      "requirements": [ "Key: \"Customs office key\"" ]
+    },
+	{
+      "name": "Farming - Part 4",
+      "giver": "Mechanic",
+      "req_level": 14,
+      "id": 112,
+      "req_quests": [ 111 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in: (FiR)",
+		"subs": [ "4x \"Graphics card\"", 
+				"8x \"CPU fan\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Signal - Part 1",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 113,
+      "req_quests": [ 94 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Find antenna:", 
+		"subs": [ "Resort, west wing, roof, east", 
+				"Radar, north-west" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Signal - Part 2",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 114,
+      "req_quests": [ 94 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "3x \"PC CPU\"",
+				"3x \"Rechargeable battery\"", 
+				"3x \"Printed circuit board\"", 
+				"3x \"Broken GPhone\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Signal - Part 3",
+      "giver": "Mechanic",
+      "req_level": 15,
+      "id": 115,
+      "req_quests": [ 114 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Place \"Signal Jammer\":", 
+		"subs": [ "Resort, west wing, roof, east", 
+				"Radar, north-west", 
+				"East, Tower" ]
+		}, {
+        "obj": "Extract"
+      }],
+      "requirements": [ "3x \"Signal Jammer\"" ]
+    },
+	{
+      "name": "Signal - Part 4",
+      "giver": "Mechanic",
+      "req_level": 15,
+      "id": 116,
+      "req_quests": [ 115 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Increase memory skill level to 4"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Bad habit",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 117,
+      "req_quests": [ 110 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in following cigarettes (FiR):",
+		"subs": [ "3x \"Malboro\"", 
+				"3x \"Strike\"", 
+				"3x \"Wilston\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Scout",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 118,
+      "req_quests": [ 114 ],
+      "maps": [ "Factory"],
+      "objectives": [{
+        "obj": "Find the following exctract areas:", 
+		"subs": [ "1: north-west, Gate 3", 
+				"2: south-west, Gate 0", 
+				"3: north-east, underground, Cellars" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Insider",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 119,
+      "req_quests": [ 113 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Reach level 3 loyalty with Prapor"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Psycho Sniper",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 120,
+      "req_quests": [ 89 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Upgrade the Sniper skill to level 9"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Import",
+      "giver": "Mechanic",
+      "req_level": 35,
+      "id": 121,
+      "req_quests": [ 112 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "2x \"UHF RFID Readers\"", 
+				"2x \"VPX Flash Storage Modules\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Fertilizers",
+      "giver": "Mechanic",
+      "req_level": 30,
+      "id": 122,
+      "req_quests": [ 112 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:",
+		"subs": [ "5x \"Wires\"",
+				"5x \"Capacitors\"" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "A Shooter Born in Heaven",
+      "giver": "Mechanic",
+      "req_level": 12,
+      "id": 123,
+      "req_quests": [ 114 ],
+      "maps": [ "Woods", "Interchange", "Shoreline", "Customs"],
+      "objectives": [{
+        "obj": "Kill with headshots at more than 100m distance:",
+        "subs": [ "Woods: 3x PMC",
+          "Interchange: 3x PMC",
+          "Shoreline: 3x PMC",
+          "Customs: 3x PMC" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Introduction",
+      "giver": "Mechanic",
+      "req_level": 9,
+      "id": 124,
+      "req_quests": [ 93 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "West of saw mill, east of airplane, under jaeger's camp, take paper"
+      }],
+      "requirements": [ ]
+    },
+
+
+
+
+
+
+
+    {
+      "name": "Only business",
+      "giver": "Ragman",
+      "req_level": 15,
+      "id": 125,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Reach level 2 loyalty with Ragman"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Make ULTRA Great Again",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 126,
+      "req_quests": [ 125 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "25x Kill Scav"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Big sale",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 127,
+      "req_quests": [ 125 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "Checkout the following stores:",
+        "subs": [
+          "AVOKADO",
+          "KOSTIN",
+          "tRend",
+          "DINO CLOTHES",
+          "TOP BRAND" ]
+        },{
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Blood of War - Part 1",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 128,
+      "req_quests": [ 127 ], 
+      "maps": ["Interchange"],
+      "objectives": [{
+        "obj": "Mark orange fuel tank trucks",
+        "subs": ["North-east, power station", 
+		"West, on road near edge of map", 
+		"East, road near edge of map" ]
+      }],
+      "requirements": ["3x MS2000 Marker"]
+    },
+	{
+      "name": "Dressed to kill",
+      "giver": "Mechanic",
+      "req_level": 0,
+      "id": 129,
+      "req_quests": [ 128 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "7x \"Ushanka ear-flap cap\"", 
+				"7x \"Kinda cowboy hat\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Gratitude",
+      "giver": "Mechanic",
+      "req_level": 0,
+      "id": 130,
+      "req_quests": [ 129, 134 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "Leave the following items at the pier north of saw mill:", 
+		"subs": [ "\"Ghost balaclava\"", 
+				"\"Shemagh (NOT var. 2)\"", 
+				"\"RayBench Hipster Reserve sunglasses\"", 
+				"\"Round frame sunglasses\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Sales Night",
+      "giver": "Ragman",
+      "req_level": 30,
+      "id": 131,
+      "req_quests": [ 130 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "7x Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Hot delivery",
+      "giver": "Ragman",
+      "req_level": 29,
+      "id": 132,
+      "req_quests": [ 130  ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "Avokado, stash following items:", 
+		"subs": [ "2x \"Peltor ComTac 2 headset\"", 
+				"2x \"6B47 Ratnik-BSh Helmet\"" ]
+		},{
+        "obj": "West, near front entrance, stage, stash following items:", 
+		"subs": [ "2x \"BNTI Gzhel-K armor\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Database - Part 1",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 133,
+      "req_quests": [ 127  ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "Find manifests:", 
+		"subs": [ "IDEA, computer room, middle desk at computers", 
+				"Goshan, on squard desk setup", 
+				"OLI, on squard desk setup" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Database - Part 2",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 134,
+      "req_quests": [ 133  ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "OLI, west, Logistics room, take manifest"
+      }],
+      "requirements": [ "Key: \"Key to OLI logistics department office\"" ]
+    },
+    {
+      "name": "Minibus",
+      "giver": "Ragman",
+      "req_level": 24,
+      "id": 135,
+      "req_quests": [ 134 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "3x Mark minibus's:",
+        "subs": ["South-west, parking area", "parking under shopping mall, front entrance", "parking under shopping mall, front entrance, south"]
+		},{
+        "obj": "Extract"
+      }],
+      "requirements": ["3x MS2000 Marker"]
+    },
+	{
+      "name": "Sew it good - Part 1",
+      "giver": "Ragman",
+      "req_level": 25,
+      "id": 136,
+      "req_quests": [ 134 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in: (FiR)",
+		"subs": [ "1x \"Ski hat with holes for eyes\"", 
+				"1x \"Pilgrim tourist backpack\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Sew it good - Part 2",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 137,
+      "req_quests": [ 136 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "1x \"BNTI Gzhel-K armor\" at 0-50% durability", 
+				"1x \"BNTI Gzhel-K armor\" at 50-100% durability" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Sew it good - Part 3",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 138,
+      "req_quests": [ 137 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "1x \"6B43\" at 0-50% durability", 
+				"1x \"6B43\" at 50-100% durability" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Sew it good - Part 4",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 139,
+      "req_quests": [ 138 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "2x \"Wartech gear rig (TV-109, TV-106)\"", 
+				"2x \"BlackRock chest rig\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The Blood of War - Part 2",
+      "giver": "Ragman",
+      "req_level": 23,
+      "id": 140,
+      "req_quests": [ 136 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "4x \"Fuel conditioner\"" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Blood of War - Part 3",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 141,
+      "req_quests": [ 140 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "3x Mark fuel stash's:",
+        "subs": ["South, at extract: Mountain Stash", "west, north of plane, box rock", "south-east, rock formation"]
+		},{
+        "obj": "Extract"
+      }],
+      "requirements": ["3x MS2000 Marker"]
+    },
+	{
+      "name": "The key to success",
+      "giver": "Ragman",
+      "req_level": 26,
+      "id": 142,
+      "req_quests": [ 137 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "Hand over two books:", 
+		"subs": [ "Main-floor, Books, middle bookshelf, lowest shelf, middle", 
+				"1st-floor, МУЗЕЙ ИСТОРИИ, front entrance, book pile, red book" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Living high is not a crime - Part 1",
+      "giver": "Ragman",
+      "req_level": 27,
+      "id": 143,
+      "req_quests": [ 138 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "3x \"Bronze lion\"", 
+				"3x \"Horse figurine\"", 
+				"2x \"Cat figurine\"", 
+				"1x \"Roler submariner gold wrist watch\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Living high is not a crime - Part 2",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 144,
+      "req_quests": [ 141, 143 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "3x \"Antique teapot\"", 
+				"2x \"Antique vase\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Charisma brings success",
+      "giver": "Ragman",
+      "req_level": 10,
+      "id": 145,
+      "req_quests": [ 139 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Increase Charisma skill level to 10"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "No fuss needed",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 146,
+      "req_quests": [ 142 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Reach level 3 loyalty with Therapist"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Supervisor",
+      "giver": "Ragman",
+      "req_level": 40,
+      "id": 147,
+      "req_quests": [ 131 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "\"key for Goshan cash registers\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Scavenger",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 148,
+      "req_quests": [ 132 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Increase Search skill level to 9"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The stylish one",
+      "giver": "Ragman",
+      "req_level": 0,
+      "id": 149,
+      "req_quests": [ 142 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "100x Kill Killa"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Textile - Part 1",
+      "giver": "Ragman",
+      "req_level": 40,
+      "id": 150,
+      "req_quests": [ 139 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "5x \"Aramid fiber cloth\"", 
+				"10x \"Ripstop cloth\"", 
+				"3x \"Paracord\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Textile - Part 2",
+      "giver": "Ragman",
+      "req_level": 47,
+      "id": 151,
+      "req_quests": [ 150 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "10x \"Fleece cloth\"", 
+				"10x \"Polyamide fabric Cordura\"", 
+				"5x \"KEKTAPE duct tape\"" ]
+      }],
+      "requirements": [ ]
+    },
+	
+	
+	
+	
+	
+	
+	
+	{
+      "name": "Acquaintance",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 152,
+      "req_quests": [ 124 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "5x \"Iskra lunch box\"", 
+				"6x \"Emelya rye croutons\"", 
+				"3x \"delicious beef stew\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Unprotected, but dangerous",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 153,
+      "req_quests": [ 152 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "5x Kill scav while not wearing body armor (Both body and rig must not contain armor)"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Thrifty",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 154,
+      "req_quests": [ 152 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "Stash the following items in both bunkers, in destroyed wooden create", 
+		"subs": [ "2x \"Iskra lunch box\"", 
+				"2x \"0.6L water bottle\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Zhivchik",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 155,
+      "req_quests": [ 154 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "Spend 5 mins dehydrated"
+		},{
+		"obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Wounded beast",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 156,
+      "req_quests": [ 155 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "5x Kill scav while under pain effect"
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Tough guy",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 157,
+      "req_quests": [ 156 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "4x Kill scav in a single raid. The use of medicine is not allowed."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Cold blooded",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 158,
+      "req_quests": [ 156 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "4x Kill PMCs with headshots while having tremor."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Zatoichi",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 159,
+      "req_quests": [ 158 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "2x Kill PMCs while you are blinded by flashbang."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Eagle-owl",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 160,
+      "req_quests": [ 159 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "10x Kill Scavs between 21-03 without using NVG or Thermal sights."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Combat medic",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 161,
+      "req_quests": [ 158 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Reach level 5 Vitality skill."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "The survivalist path - Secured perimeter",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 162,
+      "req_quests": [ 156 ],
+      "maps": [ "Factory" ],
+      "objectives": [{
+        "obj": "10x Kill PMC i office area."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - The trophy",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 163,
+      "req_quests": [ 162 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "Kill Reshala"
+		},{
+        "obj": "Hand-in \"golden TT\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Woods cleaning",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 164,
+      "req_quests": [ 162 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "50x Kill scav (Any map)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Controller",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 165,
+      "req_quests": [ 164 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "2x Kill PMCs while they are blinded by flashbang."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Sell-out",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 166,
+      "req_quests": [ 164, 163 ],
+      "maps": [ "Interchange" ],
+      "objectives": [{
+        "obj": "Kill Killa"
+		},{
+        "obj": "Hand-in \"Killa's helmet\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Woods keeper",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 187,
+      "req_quests": [ 164, 163 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "Kill Shturman"
+		},{
+        "obj": "Hand-in \"Shturman's key\" (FiR)"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Justice",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 167,
+      "req_quests": [ 163 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "3x Kill Reshala's guards."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Evil watchman",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 168,
+      "req_quests": [ 166 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "10x Kill PMCs in Dorms."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Eraser",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 169,
+      "req_quests": [ 187 ],
+      "maps": [ "Reserve" ],
+      "objectives": [{
+        "obj": "Kill Gluhar."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Huntsman path - Eraser - Part 2",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 170,
+      "req_quests": [ 169 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "10x Kill raiders."
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Ambulance",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 171,
+      "req_quests": [ 158 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR:", 
+		"subs": [ "2x \"CMS surgery kits\"", 
+				"1x \"portable defibrillators\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Shady business",
+      "giver": "Jaeger",
+      "req_level": 20,
+      "id": 186,
+      "req_quests": [ 49 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "3x \"flash drives\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Nostalgia",
+      "giver": "Jaeger",
+      "req_level": 28,
+      "id": 172,
+      "req_quests": [ 174 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, west 303, bedside table, bottom, \"Photo Album\""
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Fishing place",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 173,
+      "req_quests": [ 164 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "3x \"TerraGroup Labs access keycards\"" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Courtesy visit",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 174,
+      "req_quests": [ 157 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Find houses in the swamp:", 
+		"subs": [ "North west most house", 
+				"North east most house", 
+				"South east most house" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Hunting trip",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 175,
+      "req_quests": [ 187 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in:", 
+		"subs": [ "3x \"M700\" which has: recoil < 600 and ergo > 50" ]
+      }],
+      "requirements": [ ]
+    },
+	{
+      "name": "Reserv",
+      "giver": "Jaeger",
+      "req_level": 28,
+      "id": 176,
+      "req_quests": [ 162 ],
+      "maps": [ "Reserve" ],
+      "objectives": [{
+        "obj": "Below \"Bunker hermetic door\", one of the cages."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 1",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 177,
+      "req_quests": [ 152, 97 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "10x Kill Scavs over 50m with \"Mosin\" without scope."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 2",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 178,
+      "req_quests": [ 177 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Make hits with \"Mosin\" over 80m away", 
+		"subs": [ "5x leg shots", 
+				"3x headshots" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 3",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 179,
+      "req_quests": [ 178 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "5x Kill PMCs at less then 15m with \"Mosin\"."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 4",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 180,
+      "req_quests": [ 179 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Get level 5 in Sniper Rifles skill."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 5",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 181,
+      "req_quests": [ 180 ],
+      "maps": [ "Customs" ],
+      "objectives": [{
+        "obj": "10x Kill Scavs with \"Mosin\" between 23-4."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 6",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 182,
+      "req_quests": [ 181 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "7x Kill Scavs with \"Mosin\"."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 7",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 183,
+      "req_quests": [ 182 ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "5x Kill PMCs over 54m away with suppressed \"Mosin\"."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The Tarkov shooter - Part 8",
+      "giver": "Jaeger",
+      "req_level": 0,
+      "id": 184,
+      "req_quests": [ 183 ],
+      "maps": [ "Woods" ],
+      "objectives": [{
+        "obj": "3x Kill PMCs \"Mosin\" (In one raid)."
+      }],
+      "requirements": [ ]
+    },
+
+
+
+    {
+      "name": "The bunker - Part 1",
+      "giver": "Prapor",
+      "req_level": 10,
+      "id": 190,
+      "req_quests": [ 4 ],
+      "maps": [ "Reserve" ],
+      "objectives": [{
+        "obj": "Find underground bunker control room."
+      },{
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "The bunker - Part 2",
+      "giver": "Prapor",
+      "req_level": 0,
+      "id": 191,
+      "req_quests": [ 190 ],
+      "maps": [ "Reserve" ],
+      "objectives": [{
+        "obj": "Locate bunker entrances from the medical building and the four buildings surrounding helicopter."
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Anesthesia",
+      "giver": "Prapor",
+      "req_level": 21,
+      "id": 192,
+      "req_quests": [ 8 ],
+      "maps": ["Shoreline"],
+      "objectives": [{
+        "obj": "3x Mark Sanitar spawns",
+        "subs": ["Cottages, behind locked villa, med. table",
+                "Pier, in front of building, med. bed",
+                "Resort, outside between east and west wing, near ambulance, med. bed"]
+      },{
+        "obj": "Extract"
+      }],
+      "requirements": ["3x MS2000 Marker"]
+    },
+    {
+      "name": "Rigged game",
+      "giver": "Skier",
+      "req_level": 0,
+      "id": 193,
+      "req_quests": [ 192 ],
+      "maps": ["Shoreline"],
+      "objectives": [{
+        "obj": "3x Mark Sanitar spawns",
+        "subs": ["Cottages, behind locked villa, med. container.",
+          "Pier, in front of building, med. container.",
+          "Resort, outside between east and west wing, near ambulance, med. container."]
+      },{
+        "obj": "Extract"
+      }],
+      "requirements": ["3x MS2000 Marker"]
+    },
+    {
+      "name": "Colleagues - Part 1",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 194,
+      "req_quests": [ 31 ],
+      "maps": ["Shoreline"],
+      "objectives": [{
+        "obj": "3x Find covered bodies",
+        "subs": ["Cottages, behind locked villa, between tree and ambulance.",
+          "Pier, in front of building.",
+          "Resort, outside between east and west wing, near helicopter."]
+      },{
+        "obj": "Extract"
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "Colleagues - Part 2",
+      "giver": "Therapist",
+      "req_level": 0,
+      "id": 195,
+      "req_quests": [ 194 ],
+      "maps": ["Shoreline"],
+      "objectives": [{
+        "obj": "2x Find quest items:",
+        "subs": ["Pier, inside building, upstairs, room closest to gas, on top of shelf unit.",
+          "Cottages, locked villa, upstairs, inside potted plant."]
+      }],
+      "requirements": [ "Cottage back entrance key" ]
+    },
+    {
+      "name": "The chemistry closet",
+      "giver": "Mechanic",
+      "req_level": 0,
+      "id": 196,
+      "req_quests": [ 194, 192 ],
+      "maps": [ "Shoreline" ],
+      "objectives": [{
+        "obj": "Resort, east wing, 110, enter room."
+      },{
+        "obj": "Extract"
+      }],
+      "requirements": [ "\"Key with tape\"" ]
+    },
+    {
+      "name": "Samples",
+      "giver": "Peacekeeper",
+      "req_level": 0,
+      "id": 197,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+        "subs": [ "\"M.U.L.E. stimulator\"",
+          "\"Cocktail \"Obdolbos\"\"",
+          "\"Meldonin\"",
+          "\"AHF1-M\"",
+          "\"P22\"",
+          "\"L1 (Norepinephrine)\"",
+          "\"3-(b-TG)\"" ]
+      }],
+      "requirements": [ ]
+    },
+    {
+      "name": "TerraGroup employee",
+      "giver": "Peacekeeper",
+      "req_level": 0,
+      "id": 198,
+      "req_quests": [ 197 ],
+      "maps": [ "Labs" ],
+      "objectives": [{
+        "obj": "Room across from green keycard room, take usb from laptop."
+      }],
+      "requirements": [ "Key card with a blue marking" ]
+    },
+	
+	
+	{
+      "name": "Collector",
+      "giver": "Fence",
+      "req_level": 0,
+      "id": 185,
+      "req_quests": [ ],
+      "maps": [ ],
+      "objectives": [{
+        "obj": "Hand-in (FiR):",
+		"subs": [ "\"Old firesteel\"", 
+				"\"Antique axe\"", 
+				"\"Battered antique Book\"", 
+				"\"FireKlean gun lube\"", 
+				"\"Golden rooster\"", 
+				"\"Silver Badge\"", 
+				"\"Deadlyslob's beard oil\"", 
+				"\"Golden 1GPhone\"", 
+				"\"Jar of DevilDog mayo\"", 
+				"\"Can of sprats\"", 
+				"\"Fake mustache\"", 
+				"\"Kotton beanie\"" ]
+      }],
+      "requirements": [ ]
+    }
+  ]
+}
