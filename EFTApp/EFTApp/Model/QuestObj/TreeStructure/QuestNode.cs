@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EFTApp.Model
 {
-	class QuestNode
+	public class QuestNode
 	{
 		private List<QuestNode> requiredQuests = new List<QuestNode>();
 		private List<QuestNode> followingQuests = new List<QuestNode>();

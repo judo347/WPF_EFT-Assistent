@@ -2,7 +2,7 @@
 
 namespace EFTApp.Model
 {
-	class VisualizerQuestNode
+	public class VisualizerQuestNode
 	{
 		public int x;
 		public int y;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace EFTApp.Model
 {
-	class QuestManagerTree
+	public class QuestManagerTree
 	{
 		public QuestModel questModel { get; }
 

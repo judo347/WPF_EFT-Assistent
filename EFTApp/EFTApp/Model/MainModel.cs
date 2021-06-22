@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EFTApp.Model
 {
-	class MainModel
+	public class MainModel
 	{
 		private QuestManagerTree qmt;
 		private PlayerInfo playerInfo;

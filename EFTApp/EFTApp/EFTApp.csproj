@@ -60,7 +60,9 @@
     </ApplicationDefinition>
     <Compile Include="View\DataTemplateQuestCard.cs" />
     <Compile Include="View\QuestRowVisual.cs" />
+    <Compile Include="View\VisualManager.cs" />
     <Compile Include="View\VisualQuestCard.cs" />
+    <Compile Include="View\VisualQuestCategoryManager.cs" />
     <Compile Include="View\VisualQuestRow.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

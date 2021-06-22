@@ -11,6 +11,7 @@ namespace EFTApp.View
     {
 		public Quest quest { get; set; }
 		public string stateColor { get; set; } = "Black";
+		public bool isGhost { get; set; } = false; //If true, the UI is showing multiples of this card.
 
 		public VisualQuestCard(Quest quest)
 		{

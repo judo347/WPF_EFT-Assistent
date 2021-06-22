@@ -21,6 +21,7 @@ namespace EFTApp.Model
 		[JsonProperty("req_LL")]
 		public int requiredLoyaltyLevel { get; set; } = 0;
 		public int id { get; set; }
+		[JsonProperty("req_quests")]
 		public List<int> requiredQuests { get; set; } = new List<int>();
 		public List<QuestObjectives> objectives { get; set; }
 		public List<string> requirements { get; set; } = new List<string>();

@@ -12,6 +12,8 @@ namespace EFTApp
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		public string windowName { get; } = "EFT: Quest Assistant"; //TODO use
+
 		private MainModel mainModel;
 
 		public List<VisualQuestRow> QuestRows { get; set; }
