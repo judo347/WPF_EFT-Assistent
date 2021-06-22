@@ -253,10 +253,57 @@
                                 <Label.ContentTemplate>
                                   <DataTemplate>
                                     <StackPanel Background="{Binding stateColor}" MouseLeftButtonUp="Label_MouseLeftButtonUp">
-                                      <TextBlock Text="{Binding quest.name}"></TextBlock>
                                       <TextBlock Text="{Binding quest.trader}"></TextBlock>
+                                      <TextBlock Text="{Binding quest.name}"></TextBlock>
                                       <TextBlock Text="{Binding quest.state}"></TextBlock>
-                                    </StackPanel>
+                                      <TextBlock Text="Objectives"></TextBlock>
+                                      <ListBox ItemsSource="{Binding quest.objectives}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding}">
+                                                    <Label.ContentTemplate>
+                                                        <DataTemplate>
+                                                            <StackPanel>
+                                                                <TextBlock Text="{Binding objective}"></TextBlock>
+                                                              <ListBox ItemsSource="{Binding subObjectives}">
+                                                                <ListBox.ItemTemplate>
+                                                                  <DataTemplate>
+                                                                    <Label Content="{Binding}">
+                                                                      <Label.ContentTemplate>
+                                                                        <DataTemplate>
+                                                                          <StackPanel>
+                                                                            <TextBlock Text="{Binding}"></TextBlock>
+                                                                        </StackPanel>
+                                                                        </DataTemplate>
+                                                                      </Label.ContentTemplate>
+                                                                    </Label>
+                                                                  </DataTemplate>
+                                                                </ListBox.ItemTemplate>
+                                                              </ListBox>
+                                                            </StackPanel>
+                                                        </DataTemplate>
+                                                    </Label.ContentTemplate>
+                                                </Label>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                      </ListBox>
+                                      <TextBlock Text="Requirements"></TextBlock>
+                                      <ListBox ItemsSource="{Binding quest.requirements}">
+                                        <ListBox.ItemTemplate>
+                                          <DataTemplate>
+                                            <Label Content="{Binding}">
+                                              <Label.ContentTemplate>
+                                                <DataTemplate>
+                                                  <StackPanel>
+                                                    <TextBlock Text="{Binding}"></TextBlock>
+                                                  </StackPanel>
+                                                </DataTemplate>
+                                              </Label.ContentTemplate>
+                                            </Label>
+                                          </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                      </ListBox>
+                                                                </StackPanel>
                                   </DataTemplate>
                                 </Label.ContentTemplate>
                               </Label>
