@@ -16,69 +16,21 @@ namespace EFTApp
 		public string windowName { get; } = "EFT: Quest Assistant"; //TODO use
 
 		private MainModel mainModel;
+		public VisualManager visualManager { get; set; }
 
-		public List<VisualQuestRow> QuestRows { get; set; }
+		public List<VisualQuestRow> currentShownRows { get; set; } = new List<VisualQuestRow>();
 		private bool showOnlyActiveQuests = true;
 
 		public MainWindow()
 		{
+			visualManager = new VisualManager();
 			mainModel = new MainModel();
+			visualManager.setModelAndAStage(mainModel, this);
 			//mainModel.loadSlot(0); //TODO
 			InitializeComponent();
 			updateLevels();
 
-			initializeRows();
-
 			DataContext = this;
-		}
-
-		private void initializeRows()
-		{
-			QuestRows = new List<VisualQuestRow>();
-
-			var mapValues = Enum.GetValues(typeof(MapType));
-			foreach(MapType map in mapValues)
-			{
-				QuestRows.Add(new VisualQuestRow(map));
-			}
-
-			reloadQuestVisuals();
-		}
-
-		public void reloadQuestVisuals()
-		{
-			foreach (Quest quest in mainModel.getQmt().questModel.allQuests)
-			{
-				if(showOnlyActiveQuests)
-				{
-					if(quest.state == Quest.QuestState.ACTIVE)
-					{
-						foreach (MapType mapType in quest.maps)
-						{
-							foreach (VisualQuestRow row in QuestRows)
-							{
-								if (row.Map == mapType)
-								{
-									row.Quests.Add(new VisualQuestCard(quest));
-								}
-							}
-						}
-					}
-
-				} else
-				{
-					foreach (MapType mapType in quest.maps)
-					{
-						foreach (VisualQuestRow row in QuestRows)
-						{
-							if (row.Map == mapType)
-							{
-								row.Quests.Add(new VisualQuestCard(quest));
-							}
-						}
-					}
-				}
-			}
 		}
 
 		/** Updates the level side panel with data from model. */
@@ -99,6 +51,7 @@ namespace EFTApp
 			var tb = (TextBlock)e.OriginalSource;
 			var dataCxtx = tb.DataContext;
 			var visQuestCard = (VisualQuestCard)dataCxtx;
+			Console.WriteLine(visQuestCard);
 		}
 
 		private void Button_Click_Player_Level_Up(object sender, RoutedEventArgs e)

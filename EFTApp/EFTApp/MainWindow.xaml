@@ -4,15 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EFTApp"
+        xmlns:v="clr-namespace:EFTApp.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="1200"
         WindowStyle="None"
         ResizeMode="NoResize">
     <Window.Resources>
-          <x:Array x:Key="questRows" Type="{x:Type local:QuestRowVisual}"
-                   xmlns:local="clr-namespace:EFTApp.View">
+      <!--
+      <v:VisualQuestCategoryManager x:Key="qcm" Type="{x:Type local:VisualQuestCategoryManager}">
 
-          </x:Array>
+        </v:VisualQuestCategoryManager>-->
+      <x:Array x:Key="questRows" Type="{x:Type local:QuestRowVisual}"
+                 xmlns:local="clr-namespace:EFTApp.View">
+        </x:Array>
+        <x:Array x:Key="currentShownRows" Type="{x:Type local:QuestRowVisual}"
+                 xmlns:local="clr-namespace:EFTApp.View">
+        </x:Array>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -231,15 +238,15 @@
         -->
 
         <Grid Background="Green" Grid.Column="1" Grid.Row="4">
-          <ListBox ItemsSource="{Binding QuestRows}">
-            <ListBox.ItemTemplate>
+            <ListBox ItemsSource="{Binding currentShownRows}">
+                <ListBox.ItemTemplate>
               <DataTemplate>
                 <Label Content="{Binding}">
                   <Label.ContentTemplate>
                     <DataTemplate>
                       <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Map}"></TextBlock>
-                        <ListBox ItemsSource="{Binding Quests}">
+                        <TextBlock Text="{Binding identificationString}"></TextBlock>
+                          <ListBox ItemsSource="{Binding Quests}">
                           <ListBox.ItemTemplate>
                             <DataTemplate>
                               <Label Content="{Binding}">

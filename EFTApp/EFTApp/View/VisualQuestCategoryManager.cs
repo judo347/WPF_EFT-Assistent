@@ -19,16 +19,17 @@ namespace EFTApp.View
 		private Dictionary<TraderType, VisualQuestRow> categoryRows_trader = new Dictionary<TraderType, VisualQuestRow>();
 		private Dictionary<MapType, VisualQuestRow> categoryRows_map = new Dictionary<MapType, VisualQuestRow>();
 
-		public List<VisualQuestRow> currentShownRows { get; set; } = new List<VisualQuestRow>();
+		private MainWindow mainWindow { get; set; }
 
-		public VisualQuestCategoryManager(VisualManager visualManager)
+		public VisualQuestCategoryManager(VisualManager visualManager, MainWindow mainWindow)
 		{
+			this.mainWindow = mainWindow;
 			this.visualManager = visualManager;
 		}
 
 		public void reloadSorting(SortingMode sortingMode)
 		{
-			currentShownRows = new List<VisualQuestRow>();
+			mainWindow.currentShownRows = new List<VisualQuestRow>();
 			setupCategoryBoxes(sortingMode);
 			visualManager.reloadQuestVisuals();
 		}
@@ -66,10 +67,10 @@ namespace EFTApp.View
 					categoryRows_trader.Add(trader, new VisualQuestRow(trader));
 				}
 
-				currentShownRows = new List<VisualQuestRow>();
+				mainWindow.currentShownRows = new List<VisualQuestRow>();
 				foreach (KeyValuePair<TraderType, VisualQuestRow> kvp in categoryRows_trader)
 				{
-					currentShownRows.Add(kvp.Value);
+					mainWindow.currentShownRows.Add(kvp.Value);
 				}
 			}
 			else if (sortingMode == SortingMode.MAP)
@@ -80,10 +81,10 @@ namespace EFTApp.View
 					categoryRows_map.Add(map, new VisualQuestRow(map));
 				}
 
-				currentShownRows = new List<VisualQuestRow>();
+				mainWindow.currentShownRows = new List<VisualQuestRow>();
 				foreach (KeyValuePair<MapType, VisualQuestRow> kvp in categoryRows_map)
 				{
-					currentShownRows.Add(kvp.Value);
+					mainWindow.currentShownRows.Add(kvp.Value);
 				}
 			}
 			else

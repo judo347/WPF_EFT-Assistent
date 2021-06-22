@@ -14,12 +14,12 @@ namespace EFTApp.View
 		public VisualQuestCategoryManager qcm { get; set; }
 
 		private SortingMode currentSortingMode = SortingMode.MAP;
-		private bool isInGodMode = true;
+		private bool isInGodMode = false;
 
-		public void setModelAndAStage(MainModel mainModel)
+		public void setModelAndAStage(MainModel mainModel, MainWindow mainWindow)
 		{
 			this.mainModel = mainModel;
-			this.qcm = new VisualQuestCategoryManager(this);
+			this.qcm = new VisualQuestCategoryManager(this, mainWindow);
 			this.qcm.reloadSorting(currentSortingMode);
 			/* TODO implement
 			reloadPlayerInfoVisuals();
