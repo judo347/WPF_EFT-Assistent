@@ -245,7 +245,7 @@
                               <Label Content="{Binding}">
                                 <Label.ContentTemplate>
                                   <DataTemplate>
-                                    <StackPanel Background="{Binding stateColor}">
+                                    <StackPanel Background="{Binding stateColor}" MouseLeftButtonUp="Label_MouseLeftButtonUp">
                                       <TextBlock Text="{Binding quest.name}"></TextBlock>
                                       <TextBlock Text="{Binding quest.trader}"></TextBlock>
                                       <TextBlock Text="{Binding quest.state}"></TextBlock>

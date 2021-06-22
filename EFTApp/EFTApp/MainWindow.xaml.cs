@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace EFTApp
 {
@@ -91,6 +92,13 @@ namespace EFTApp
 			mechanicLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Mechanic).ToString();
 			ragmanLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Ragman).ToString();
 			jaegerLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Jaeger).ToString();
+		}
+
+		private void Label_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+		{
+			var tb = (TextBlock)e.OriginalSource;
+			var dataCxtx = tb.DataContext;
+			var visQuestCard = (VisualQuestCard)dataCxtx;
 		}
 
 		private void Button_Click_Player_Level_Up(object sender, RoutedEventArgs e)
