@@ -79,6 +79,11 @@ namespace EFTApp.Model
 			questNodeMap[quest].completeQuest(playerInfo);
 		}
 
+		public void acceptQuest(Quest quest, PlayerInfo playerInfo)
+		{
+			questNodeMap[quest].acceptQuest(playerInfo);
+		}
+
 		public void colleteQuestAndPreQuestsRecursively(Quest questToComplete)
 		{
 			questNodeMap[questToComplete].completeQuestAndRequiredQuests();

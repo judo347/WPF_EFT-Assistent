@@ -1,15 +1,18 @@
 ﻿using EFTApp.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static EFTApp.Model.Quest;
 
 namespace EFTApp.View
 {
 	/** Before named: PrimarySceenController or rootController */
 	public class VisualManager
 	{
+		public MainWindow mainWindow { get; set; }
 		public MainModel mainModel { get; set; }
 		public VisualQuestCategoryManager qcm { get; set; }
 
@@ -18,6 +21,7 @@ namespace EFTApp.View
 
 		public void setModelAndAStage(MainModel mainModel, MainWindow mainWindow)
 		{
+			this.mainWindow = mainWindow;
 			this.mainModel = mainModel;
 			this.qcm = new VisualQuestCategoryManager(this, mainWindow);
 			this.qcm.reloadSorting(currentSortingMode);
@@ -29,13 +33,28 @@ namespace EFTApp.View
 
 		/** Reloads all visuals related to quests.
 		Should be called each time changes to quests is made in the model. */
-		public void reloadQuestVisuals()
+		public void reloadQuestVisuals() //TODO OPTIMIZE THIS METHOD!!
 		{
+			Console.WriteLine("Reloading quest visuals!");
+
+			mainWindow.currentShownRows = new ObservableCollection<VisualQuestRow>();
+
 			// Clears quest boxes
 			qcm.clearQuestCategoryBoxes(currentSortingMode);
 
-			// Re-adds all active quests
-			foreach(Quest quest in mainModel.getQmt().getActiveQuests())
+			// Re-add all available quests
+			foreach (Quest quest in mainModel.getQmt().getAvailableQuests())
+			{
+				if (quest == null)
+				{ //TODO: Bug, workaround
+					continue;
+				}
+
+				createAndAddQuestVisualCard(quest);
+			}
+
+			// Re-adds all accepted quests
+			foreach (Quest quest in mainModel.getQmt().getAcceptedQuests())
 			{
 				if (quest == null)
 				{ //TODO: Bug, workaround
@@ -57,7 +76,7 @@ namespace EFTApp.View
 					else
 						mapType = MapType.Mixed;
 
-					qcm.addQuestCard(new VisualQuestCard(quest), currentSortingMode, mapType, quest.trader);
+					qcm.addQuestCard(new VisualQuestCard(quest, QuestState.LOCKED), currentSortingMode, mapType, quest.trader);
 				}
 			}
 
@@ -66,6 +85,8 @@ namespace EFTApp.View
 
 			//qcm.hideEmptyRows(currentSortingMode); //TODO implement!
 
+			//Update shown quest rows
+			mainWindow.currentShownRows = new ObservableCollection<VisualQuestRow>(qcm.getCurrentQuestRows(currentSortingMode));
 		}
 
 		private void createAndAddQuestVisualCard(Quest quest)

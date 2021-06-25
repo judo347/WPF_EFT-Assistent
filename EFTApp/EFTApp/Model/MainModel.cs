@@ -29,6 +29,11 @@ namespace EFTApp.Model
 			qmt.completeQuest(quest, playerInfo);
 		}
 
+		public void acceptQuest(Quest quest)
+		{
+			qmt.acceptQuest(quest, playerInfo);
+		}
+
 		public void incrementTraderLoyaltyLevel(TraderType traderType)
 		{
 			if(playerInfo.getLoyaltyLevelFromTrader(traderType) < 4)

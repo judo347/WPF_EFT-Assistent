@@ -9,7 +9,7 @@ namespace EFTApp.Model
 	{
 		public enum QuestState
 		{
-			ACTIVE, LOCKED, COMPLETED
+			AVAILABLE, ACCEPTED, LOCKED, COMPLETED
 		}
 
 		public string name { get; set; }
@@ -47,7 +47,6 @@ namespace EFTApp.Model
 		public bool isCompleted() { return completed; }
 		public void complete() { completed = true; }
 
-		//TODO check if code ok?
 		public bool setStateActive(PlayerInfo playerInfo)
 		{
 			if (requiredLoyaltyLevel > 0)
@@ -63,7 +62,7 @@ namespace EFTApp.Model
 				return false;
 			}
 
-			state = QuestState.ACTIVE;
+			state = QuestState.AVAILABLE;
 			return true;
 		}
 	}

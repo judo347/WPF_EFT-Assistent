@@ -1,6 +1,7 @@
 ﻿using EFTApp.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace EFTApp.View
 
 		public void reloadSorting(SortingMode sortingMode)
 		{
-			mainWindow.currentShownRows = new List<VisualQuestRow>();
+			mainWindow.currentShownRows = new ObservableCollection<VisualQuestRow>();
 			setupCategoryBoxes(sortingMode);
 			visualManager.reloadQuestVisuals();
 		}
@@ -54,6 +55,31 @@ namespace EFTApp.View
 			}
 		}
 
+		public List<VisualQuestRow> getCurrentQuestRows(SortingMode sortingMode){
+			if(sortingMode == SortingMode.MAP)
+			{
+				List<VisualQuestRow> vals = new List<VisualQuestRow>();
+				foreach (VisualQuestRow val in categoryRows_map.Values)
+				{
+					vals.Add(val);
+				}
+
+				return vals;
+			} else if(sortingMode == SortingMode.TRADER)
+			{
+				List<VisualQuestRow> vals = new List<VisualQuestRow>();
+				foreach (VisualQuestRow val in categoryRows_trader.Values)
+				{
+					vals.Add(val);
+				}
+
+				return vals;
+			} else
+			{
+				throw new Exception("A new sorting mode has been added but not handled.");
+			}
+		}
+
 		private void setupCategoryBoxes(SortingMode sortingMode)
 		{
 			clearQuestRows();
@@ -67,7 +93,7 @@ namespace EFTApp.View
 					categoryRows_trader.Add(trader, new VisualQuestRow(trader));
 				}
 
-				mainWindow.currentShownRows = new List<VisualQuestRow>();
+				mainWindow.currentShownRows = new ObservableCollection<VisualQuestRow>();
 				foreach (KeyValuePair<TraderType, VisualQuestRow> kvp in categoryRows_trader)
 				{
 					mainWindow.currentShownRows.Add(kvp.Value);
@@ -81,7 +107,7 @@ namespace EFTApp.View
 					categoryRows_map.Add(map, new VisualQuestRow(map));
 				}
 
-				mainWindow.currentShownRows = new List<VisualQuestRow>();
+				mainWindow.currentShownRows = new ObservableCollection<VisualQuestRow>();
 				foreach (KeyValuePair<MapType, VisualQuestRow> kvp in categoryRows_map)
 				{
 					mainWindow.currentShownRows.Add(kvp.Value);
@@ -120,6 +146,18 @@ namespace EFTApp.View
 			} else
 			{
 				throw new Exception("A new sorting mode has been added but not handled!");
+			}
+		}
+
+		public void removeQuestFromRow(VisualQuestCard visQuestCard, SortingMode sortingMode)
+		{
+			if(sortingMode == SortingMode.MAP)
+			{
+				//TODO, instead, maybe give quest available status, and change that on click, and reload!
+			} else if(sortingMode == SortingMode.TRADER)
+			{
+				VisualQuestRow row = categoryRows_trader[visQuestCard.quest.trader];
+				row.Quests.Remove(visQuestCard);
 			}
 		}
 	}

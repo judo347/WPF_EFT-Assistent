@@ -2,9 +2,12 @@
 using EFTApp.View;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using static EFTApp.Model.Quest;
 
 namespace EFTApp
 {
@@ -18,7 +21,7 @@ namespace EFTApp
 		private MainModel mainModel;
 		public VisualManager visualManager { get; set; }
 
-		public List<VisualQuestRow> currentShownRows { get; set; } = new List<VisualQuestRow>();
+		public ObservableCollection<VisualQuestRow> currentShownRows { get; set; } = new ObservableCollection<VisualQuestRow>();
 		private bool showOnlyActiveQuests = true;
 
 		public MainWindow()
@@ -44,14 +47,43 @@ namespace EFTApp
 			mechanicLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Mechanic).ToString();
 			ragmanLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Ragman).ToString();
 			jaegerLevel.Text = mainModel.getPlayerInfo().getLoyaltyLevelFromTrader(TraderType.Jaeger).ToString();
+
+			reloadMainWindowsQuests();
 		}
 
 		private void Label_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
 		{
-			var tb = (TextBlock)e.OriginalSource;
-			var dataCxtx = tb.DataContext;
-			var visQuestCard = (VisualQuestCard)dataCxtx;
-			Console.WriteLine(visQuestCard);
+			var sp = (StackPanel)sender;
+			var visualQuestCard = (VisualQuestCard)sp.DataContext;
+			Console.WriteLine(visualQuestCard.quest.name);
+
+			QuestState state = visualQuestCard.quest.state;
+			if (state == QuestState.AVAILABLE)
+			{
+				//Quest is accepted
+				mainModel.acceptQuest(visualQuestCard.quest);
+				visualManager.reloadQuestVisuals();
+			}
+			else if (state == QuestState.ACCEPTED)
+			{
+				//Quest is completed
+				mainModel.completeQuest(visualQuestCard.quest);
+				visualManager.reloadQuestVisuals();
+			}
+			else if (state == QuestState.LOCKED)
+			{
+				//Nothing happens unless we are in god-mode. TODO?
+				Console.WriteLine("Clicked locked quest!");
+			}
+			else
+				throw new Exception("Should not happen!");
+
+			reloadMainWindowsQuests();
+		}
+
+		private void reloadMainWindowsQuests()
+		{
+			uiRowsListBox.ItemsSource = currentShownRows;
 		}
 
 		private void Button_Click_Player_Level_Up(object sender, RoutedEventArgs e)

@@ -32,6 +32,11 @@ namespace EFTApp.Model
 			questModel.completeQuest(quest, playerInfo);
 		}
 
+		public void acceptQuest(Quest quest, PlayerInfo playerInfo)
+		{
+			questModel.acceptQuest(quest, playerInfo);
+		}
+
 		/** Reloads quest model based on the given completed quest ids. (Sets active and completed)
 		 Used when loading saved data. */
 		public void reloadFromCompletedQuests(PlayerInfo playerInfo, List<int> completedQuestIds)
@@ -44,9 +49,14 @@ namespace EFTApp.Model
 			return questModel.getQuestsWithState(Quest.QuestState.COMPLETED);
 		}
 
-		public List<Quest> getActiveQuests()
+		public List<Quest> getAvailableQuests()
 		{
-			return questModel.getQuestsWithState(Quest.QuestState.ACTIVE);
+			return questModel.getQuestsWithState(Quest.QuestState.AVAILABLE);
+		}
+
+		public List<Quest> getAcceptedQuests()
+		{
+			return questModel.getQuestsWithState(Quest.QuestState.ACCEPTED);
 		}
 
 		public List<Quest> getLockedQuests()

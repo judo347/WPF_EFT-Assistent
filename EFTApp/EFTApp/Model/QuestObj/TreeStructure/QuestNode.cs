@@ -77,6 +77,17 @@ namespace EFTApp.Model
 			}
 		}
 
+		public void acceptQuest(PlayerInfo playerInfo)
+		{
+			if(quest.state != Quest.QuestState.AVAILABLE)
+			{
+				throw new ArgumentException("This action is not possible!");
+			} else
+			{
+				quest.state = Quest.QuestState.ACCEPTED; 
+			}
+		}
+
 		public void addSelfToRequiredQuests()
 		{
 			foreach (QuestNode node in requiredQuests)
