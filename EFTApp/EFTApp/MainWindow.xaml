@@ -253,7 +253,7 @@
                                       <TextBlock Text="{Binding quest.name}"></TextBlock>
                                       <TextBlock Text="{Binding quest.state}"></TextBlock>
                                       <TextBlock Text="Objectives"></TextBlock>
-                                      <ListBox ItemsSource="{Binding quest.objectives}">
+                                      <ListBox ItemsSource="{Binding quest.objectives}" Background="Transparent">
                                         <ListBox.ItemTemplate>
                                             <DataTemplate>
                                                 <Label Content="{Binding}">
@@ -261,7 +261,7 @@
                                                         <DataTemplate>
                                                             <StackPanel>
                                                                 <TextBlock Text="{Binding objective}"></TextBlock>
-                                                              <ListBox ItemsSource="{Binding subObjectives}">
+                                                              <ListBox ItemsSource="{Binding subObjectives}" Background="Transparent">
                                                                 <ListBox.ItemTemplate>
                                                                   <DataTemplate>
                                                                     <Label Content="{Binding}">
@@ -284,7 +284,7 @@
                                         </ListBox.ItemTemplate>
                                       </ListBox>
                                       <TextBlock Text="Requirements"></TextBlock>
-                                      <ListBox ItemsSource="{Binding quest.requirements}">
+                                      <ListBox ItemsSource="{Binding quest.requirements}" Background="Transparent">
                                         <ListBox.ItemTemplate>
                                           <DataTemplate>
                                             <Label Content="{Binding}">
@@ -299,7 +299,7 @@
                                           </DataTemplate>
                                         </ListBox.ItemTemplate>
                                       </ListBox>
-                                                                </StackPanel>
+                                    </StackPanel>
                                   </DataTemplate>
                                 </Label.ContentTemplate>
                               </Label>
